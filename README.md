@@ -88,7 +88,6 @@ def lambda_handler(event, context):
 ![](img/lambda/addarn-sns3.png)
 ![](img/lambda/addarn-sns4.png)
 ![](img/lambda/add-role1.png)
-![](img/lambda/add-role1.png)
 ![](img/lambda/add-role2.png)
 ![](img/lambda/add-role3.png)
 ![](img/lambda/add-role4.png)
@@ -126,7 +125,7 @@ def lambda_handler(event, context):
 ![](img/teste/teste9.png)
 
 ## 📸 Démo
-Dossier ![](img/) contenant les preuves de test (mail reçu, logs, etc.).
+Dossier `img/` contenant les preuves de test (captures d’écran)
 
 ## 🧠 Compétences développées
 - Architecture événementielle serverless
@@ -140,6 +139,6 @@ Dossier ![](img/) contenant les preuves de test (mail reçu, logs, etc.).
 
 ## 👤 Auteur
 **France Stanislas Bantantoula Koudissa**  
-Etudiant en Maste Génie Informatique  
+Etudiant en Master Génie Informatique  
 🔗 [LinkedIn](https://ci.linkedin.com/in/france-stanislas-bantantoula-koudissa-30245b254)
 
