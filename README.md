@@ -126,7 +126,7 @@ def lambda_handler(event, context):
 ![](img/teste/teste9.png)
 
 ## 📸 Démo
-Dossier `img/` contenant les preuves de test (mail reçu, logs, etc.).
+Dossier ![](img/) contenant les preuves de test (mail reçu, logs, etc.).
 
 ## 🧠 Compétences développées
 - Architecture événementielle serverless
