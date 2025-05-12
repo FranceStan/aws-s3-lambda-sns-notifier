@@ -125,7 +125,7 @@ def lambda_handler(event, context):
 ![](img/teste/teste9.PNG)
 
 ## 📸 Démo
-[Dossier] (img) contenant les preuves de test (captures d’écran)
+[Dossier img](img) contenant les preuves de test (captures d’écran)
 
 ## 🧠 Compétences développées
 - Architecture événementielle serverless
