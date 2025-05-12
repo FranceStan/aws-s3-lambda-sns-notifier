@@ -21,12 +21,12 @@ Recevoir un email automatique chaque fois qu’un fichier est téléversé dans 
 - Accéder à S3 → Créer un bucket (ex: `sns-bucket-lab25`)
 - Décochez l’option "Bloquer tout l'accès public" (facultatif)
 - Validez la création
-![](img/bucket/create-bucket1.png)
-![](img/bucket/create-bucket2.png)
-![](img/bucket/create-bucket3.png)
-![](img/bucket/create-bucket4.png)
-![](img/bucket/create-bucket5.png)
-![](img/bucket/create-bucket6.png)
+![](img/bucket/create-bucket1.PNG)
+![](img/bucket/create-bucket2.PNG)
+![](img/bucket/create-bucket3.PNG)
+![](img/bucket/create-bucket4.PNG)
+![](img/bucket/create-bucket5.PNG)
+![](img/bucket/create-bucket6.PNG)
 
 ### 2. Créer la fonction Lambda
 - Runtime : Python 3.12  
@@ -50,27 +50,27 @@ def lambda_handler(event, context):
 ```
 
 - Déployer la fonction
-![](img/lambda/create-fonction1.png)
-![](img/lambda/create-fonction2.png)
-![](img/lambda/create-fonction3.png)
-![](img/lambda/create-fonction4.png)
-![](img/lambda/create-fonction5.png)
+![](img/lambda/create-fonction1.PNG)
+![](img/lambda/create-fonction2.PNG)
+![](img/lambda/create-fonction3.PNG)
+![](img/lambda/create-fonction4.PNG)
+![](img/lambda/create-fonction5.PNG)
 
 ### 3. Créer un topic SNS
 - Nom du sujet : `S3UploadTopic`
 - Créer un abonnement email
 - Confirmer l’abonnement reçu par email
-![](img/sns/create-sns1.png)
-![](img/sns/create-sns2.png)
-![](img/sns/create-sns3.png)
-![](img/sns/create-sns4.png)
-![](img/sns/create-sns5.png)
-![](img/sns/create-sns6.png)
-![](img/sns/create-sns7.png)
-![](img/sns/create-sns8.png)
-![](img/sns/create-sns9.png)
-![](img/sns/create-sns10.png)
-![](img/sns/create-sns11.png)
+![](img/sns/create-sns1.PNG)
+![](img/sns/create-sns2.PNG)
+![](img/sns/create-sns3.PNG)
+![](img/sns/create-sns4.PNG)
+![](img/sns/create-sns5.PNG)
+![](img/sns/create-sns6.PNG)
+![](img/sns/create-sns7.PNG)
+![](img/sns/create-sns8.PNG)
+![](img/sns/create-sns9.PNG)
+![](img/sns/create-sns10.PNG)
+![](img/sns/create-sns11.PNG)
 
 ### 4. Ajouter les autorisations et variables Lambda
 - Ajouter la variable d’environnement `TOPIC_ARN`
@@ -83,28 +83,28 @@ def lambda_handler(event, context):
   "Resource": "arn:aws:sns:REGION:ACCOUNT_ID:S3UploadTopic"
 }
 ```
-![](img/lambda/addarn-sns1.png)
-![](img/lambda/addarn-sns2.png)
-![](img/lambda/addarn-sns3.png)
-![](img/lambda/addarn-sns4.png)
-![](img/lambda/add-role1.png)
-![](img/lambda/add-role2.png)
-![](img/lambda/add-role3.png)
-![](img/lambda/add-role4.png)
-![](img/lambda/add-role5.png)
-![](img/lambda/add-role6.png)
-![](img/lambda/add-role7.png)
-![](img/lambda/add-role1.png)
+![](img/lambda/addarn-sns1.PNG)
+![](img/lambda/addarn-sns2.PNG)
+![](img/lambda/addarn-sns3.PNG)
+![](img/lambda/addarn-sns4.PNG)
+![](img/lambda/add-role1.PNG)
+![](img/lambda/add-role2.PNG)
+![](img/lambda/add-role3.PNG)
+![](img/lambda/add-role4.PNG)
+![](img/lambda/add-role5.PNG)
+![](img/lambda/add-role6.PNG)
+![](img/lambda/add-role7.PNG)
+![](img/lambda/add-role1.PNG)
 
 ### 5. Connecter S3 à Lambda
 - Aller dans S3 > Propriétés > Événements
 - Créer un événement `PUT`
 - Cible : fonction `notifierFunction`
-![](img/lambda/add-event1.png)
-![](img/lambda/add-event2.png)
-![](img/lambda/add-event3.png)
-![](img/lambda/add-event4.png)
-![](img/lambda/add-event5.png)
+![](img/lambda/add-event1.PNG)
+![](img/lambda/add-event2.PNG)
+![](img/lambda/add-event3.PNG)
+![](img/lambda/add-event4.PNG)
+![](img/lambda/add-event5.PNG)
 
 ### 6. Tester le système
 - Upload un fichier dans S3
@@ -112,17 +112,17 @@ def lambda_handler(event, context):
   - Lambda est déclenchée
   - Un email est reçu via SNS
   - Les logs sont visibles dans CloudWatch
-![](img/teste/teste1.png)
-![](img/teste/teste2.png)
-![](img/teste/teste3.png)
-![](img/teste/teste4.png)
-![](img/teste/teste5.png)
-![](img/teste/teste5a.png)
-![](img/teste/teste5b.png)
-![](img/teste/teste6.png)
-![](img/teste/teste7.png)
-![](img/teste/teste8.png)
-![](img/teste/teste9.png)
+![](img/teste/teste1.PNG)
+![](img/teste/teste2.PNG)
+![](img/teste/teste3.PNG)
+![](img/teste/teste4.PNG)
+![](img/teste/teste5.PNG)
+![](img/teste/teste5a.PNG)
+![](img/teste/teste5b.PNG)
+![](img/teste/teste6.PNG)
+![](img/teste/teste7.PNG)
+![](img/teste/teste8.PNG)
+![](img/teste/teste9.PNG)
 
 ## 📸 Démo
 Dossier `img/` contenant les preuves de test (captures d’écran)
